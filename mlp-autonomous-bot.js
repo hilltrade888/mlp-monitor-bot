@@ -31,11 +31,11 @@ const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 const anthropic = new Anthropic({ apiKey: CLAUDE_API_KEY });
 
 // Auto-healing state
-let monitoringActive = false;
+let monitoringActive = true;
 let lastCheckTime = Date.now();
 let errorHistory = [];
 let autoFixQueue = [];
-let deploymentInProgress = false;
+let deploymentInProgress = true;
 
 console.log('🤖 MLP Autonomous System Starting...');
 console.log(`📊 Auto-Fix: ${AUTO_FIX_ENABLED ? 'ENABLED' : 'DISABLED'}`);
