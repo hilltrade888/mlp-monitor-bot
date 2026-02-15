@@ -1,23 +1,20 @@
 {
   "name": "mlp-monitor-bot",
   "version": "1.0.0",
-  "description": "AI-powered monitoring assistant for My Language Partner",
+  "description": "My Language Partner monitoring bot with multi-AI support",
   "main": "mlp-monitor-bot.js",
   "scripts": {
-    "start": "node mlp-monitor-bot.js",
-    "dev": "nodemon mlp-monitor-bot.js"
+    "start": "node mlp-monitor-bot.js"
   },
-  "keywords": ["telegram", "bot", "monitoring", "firebase", "ai"],
-  "author": "Justin - Hill Trade LLC",
-  "license": "ISC",
   "dependencies": {
     "node-telegram-bot-api": "^0.66.0",
     "@anthropic-ai/sdk": "^0.32.1",
-    "firebase-admin": "^12.0.0",
+    "axios": "^1.6.7",
     "dotenv": "^16.4.5",
-    "axios": "^1.6.7"
+    "node-ssh": "^13.2.0",
+    "firebase-admin": "^12.0.0"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.3"
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
